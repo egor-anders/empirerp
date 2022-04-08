@@ -1,0 +1,38 @@
+.modal--login {
+  @media (min-width: $desktop) {
+    background: $color-dark-4;
+  }
+}
+
+.modal-content--login {
+  @media (max-width: $desktop) {
+    background: $color-dark-4;
+  }
+}
+
+.modal__title--login {
+  color: $color-white;
+}
+
+.modal__input--login {
+  border: solid  $color-dark-3;
+  color: $color-white-light;
+  background: $color-dark-3;
+
+  &:focus {
+    border: solid $color-brand;
+    color: rgba($color: $color-white-light, $alpha: 1);
+    background-color: $color-dark-4;
+    transition: color 0.3s ease;
+  }
+
+  @media (max-width: $desktop) {
+    &:first-child {
+      margin-top: 28px;
+    }
+  }
+}
+
+.modal__message__info--login {
+  color: rgba($color: $color-white-light, $alpha: 0.45);
+}

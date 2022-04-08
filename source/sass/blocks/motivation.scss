@@ -1,0 +1,112 @@
+.motivation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: $color-white-darker;
+
+  &__paragraph {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/main/money.png") no-repeat;
+      background-size: contain;
+
+      @media (min-width: $desktop) {
+        left: 925px;
+        top: 22px;
+        width: 19px;
+        height: 19px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 19px;
+    }
+  }
+
+  &__bg {
+    position: relative;
+    min-width: 384px;
+    background-color: $color-white-darker;
+  }
+
+  &__decoration {
+    position: relative;
+    margin: 16px 0 140px;
+    border-radius: 8px;
+    width: 342px;
+    height: 143px;
+    background-color: $color-dark-4;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 127px;
+      bottom: 0;
+      z-index: 1;
+      width: 91px;
+      height: 167px;
+      background: url("../img/main/statue.svg");
+      background-size: cover;
+
+      @media (min-width: $tablet) {
+        right: 158px;
+        bottom: 0;
+        width: 150px;
+        height: 248px;
+        background-size: cover;
+      }
+
+      @media (min-width: $desktop) {
+        right: 344px;
+        bottom: 0;
+        width: 261px;
+        height: 464px;
+        background: url("../img/main/statue-desktop.svg") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -1px;
+      bottom: 0;
+      width: 344px;
+      height: 165px;
+      background: url("../img/main/motivation-decoration.svg");
+      background-size: cover;
+
+      @media (min-width: $tablet) {
+        right: 0;
+        width: 472px;
+        height: 223px;
+        background-size: cover;
+      }
+
+      @media (min-width: $desktop) {
+        right: 0;
+        bottom: 0;
+        width: 952px;
+        height: 397px;
+        background: url("../img/main/motivation-decoration-desktop.svg");
+        background-size: cover;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      width: 472px;
+      height: 223px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 107px 0 261px;
+      width: 952px;
+      height: 397px;
+    }
+  }
+}

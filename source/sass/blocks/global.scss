@@ -1,0 +1,140 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Proxima Nova", "Open Sans", sans-serif;
+}
+
+footer {
+  min-width: 384px;
+  background: $color-brand;
+}
+
+object {
+  pointer-events: none;
+}
+
+header {
+  position: relative;
+  top: 0;
+}
+
+.container {
+  padding: $window-padding;
+  min-width: 360px;
+
+  &--header {
+    padding: $window-header-padding;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 952px;
+  }
+}
+
+.login {
+  background: url("../img/bg/login__mobile-pg.jpg") no-repeat center center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    background: url("../img/bg/login-pg.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.pay {
+  background: url("../img/bg/pay-mobile-pg.jpg") no-repeat center center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    background: url("../img/bg/pay-pg.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    background-size: cover;
+  }
+}
+
+.main-page {
+  height: 100%;
+  background: url("../../img/bg/main-mobile.jpg") no-repeat center center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    background: url("../../img/bg/main-tablet.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    background: url("../../img/bg/main-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.header-bg {
+  min-width: 384px;
+  background: url("../img/main/greeting-mobile.jpg") no-repeat center center;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    min-width: 468px;
+    background: url("../img/main/greeting-tablet.jpg") no-repeat top top;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 952px;
+    background: url("../img/main/greeting-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.title {
+  margin: $base-secondary-margin auto;
+  font-size: $font-size-subtitle-1;
+  line-height: 29px;
+
+  &--card {
+    font-weight: 700;
+    font-size: $font-size-title-card;
+    line-height: 24px;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-subtitle-1;
+      line-height: 32px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $font-size-username;
+      line-height: 39px;
+    }
+  }
+
+  &--paragraph {
+    font-size: $font-size-profile-name;
+    line-height: 15px;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-body;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $font-size-title-card;
+      line-height: 24px;
+    }
+  }
+}
+
+.mobile-br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

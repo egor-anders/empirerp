@@ -1,0 +1,147 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__photo {
+    margin: 54px 0 0;
+
+    @media (min-width: $tablet) {
+      margin: 72px 0 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 126px 0 0;
+    }
+  }
+
+  &__name {
+    position: relative;
+    margin: 28px auto 8px;
+    padding: 0 8px 0 0;
+    font-size: $font-size-username;
+    line-height: 39px;
+    color: $color-dark-2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 91px;
+      top: -61px;
+      width: 32px;
+      height: 32px;
+      background: url("../img/profile/add_photo.svg");
+      cursor: pointer;
+    }
+
+    @media (min-width: $tablet) {
+      margin: 32px auto 8px;
+    }
+  }
+
+  &__balance {
+    position: relative;
+    margin: 0 0 25px;
+    padding: 0 0 0 11px;
+    color: $color-brand;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 2px;
+      width: 14px;
+      height: 14px;
+      background: url("../img/profile/balance_icon.svg");
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 276px;
+
+    &-item {
+      padding: 8px 16px;
+      font-size: $font-size-profile-name;
+      line-height: 15px;
+
+      &--ready {
+        color: $color-brand;
+        background-color: rgba($color: $color-brand, $alpha: 0.1);
+
+        &:hover {
+          color: rgba($color: $color-brand, $alpha: 0.45);
+        }
+      }
+
+      &--wait {
+        position: relative;
+        padding: 8px 16px 8px 30px;
+        color: rgba($color: $color-dark-2, $alpha: 0.45);
+        background-color: $color-white-darker;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 15px;
+          top: 11px;
+          width: 10px;
+          height: 10px;
+          background: url("../img/profile/+.svg");
+          background-repeat: no-repeat;
+          opacity: 0.45;
+          transition: opacity 0.3s;
+        }
+
+        &:hover {
+          color: $color-dark-2;
+
+          &::before {
+            opacity: 1;
+            transition: opacity 0.3s;
+          }
+        }
+      }
+
+      @media (min-width: $tablet) {
+        font-size: $font-size-button;
+        line-height: 19px;
+
+        &::before {
+          top: 13px;
+        }
+      }
+    }
+
+    @media (min-width: $tablet) {
+      width: 336px;
+    }
+  }
+}
+
+.button--account {
+  position: relative;
+  padding: 8px 8px 8px 32px;
+  color: $color-dark-2;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/profile/account_icon.png");
+  }
+}
+
+.main-nav__logo--profile {
+  padding-left: 27px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,93 @@
+.car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 380px;
+
+  &__title {
+    margin: 20px 0 16px;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+      margin: 16px 0 34px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 0 28px;
+    border: none;
+    border-radius: 8px;
+    width: 342px;
+    background-color: $color-white-darker;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 267px;
+      height: 116px;
+      background-size: cover;
+    }
+
+    &-title {
+      margin: 38px 0 39px 28px;
+      color: $color-dark-2;
+
+      @media (min-width: $tablet) {
+        margin: 66px 0 60px 28px;
+      }
+    }
+
+    &--landrover {
+      &::after {
+        background: url("../img/profile/land-rover.png") no-repeat;
+      }
+
+      @media (min-width: $tablet) {
+        &::after {
+          background: url("../img/profile/land-rover-desktop.png") no-repeat;
+        }
+      }
+    }
+
+    &--mercedes {
+      &::after {
+        background: url("../img/profile/mercedes.png") no-repeat;
+      }
+
+      @media (min-width: $tablet) {
+        &::after {
+          background: url("../img/profile/mercedes-desktop.png") no-repeat;
+        }
+      }
+    }
+
+    @media (min-width: $tablet) {
+      margin: 0 0 16px;
+      width: 468px;
+
+      &::after {
+        width: 468px;
+        height: 190px;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      &::after {
+        height: 204px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 952px;
+    margin: 0 auto;
+  }
+}

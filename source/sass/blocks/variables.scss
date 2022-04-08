@@ -1,0 +1,73 @@
+$mobile: 342px;
+$tablet: 768px;
+$desktop: 972px;
+
+// Main colors
+$color-brand: #372fff;
+$color-brand-dark: #0200b0;
+$color-brand-darker: #090149;
+$color-brand-light: #a5a1ff;
+$color-rec: #8581ff;
+$color-brand-lighter: #e0dfff;
+$color-white-light: #fff;
+$color-white: #f6f6fc;
+$color-white-dark: #f0f0f0;
+$color-white-darker: #f5f5f5;
+$color-red: #fa4b6a;
+$color-red-light: #ffb8a9;
+$color-red-lighter: #ffe4de;
+$color-dark-1: #18181a;
+$color-dark-2: #1c1c1e;
+$color-dark-3: #242425;
+$color-dark-4: #2e2e30;
+$color-dark-5: #3e3e41;
+$color-dark-6: #5c5c61;
+$color-dark-7: #8e8e93;
+$color-dark-8: #303032;
+$color-dark-9: #3b3b3e;
+$color-dark-10: #5b5b62;
+$color-error: $color-red;
+$color-error-dark: #ae3b4f;
+$color-error-light: #ef8699;
+$color-warning: #ffa048;
+$color-warning-dark: #b77437;
+$color-warning-light: #eeae73;
+$color-success: #43cc6a;
+$color-success-dark: #309b4e;
+$color-success-light: #89e3a3;
+
+// Typography
+$font-size-h1: 96px;
+$font-size-h2: 60px;
+$font-size-h3: 48px;
+$font-size-h4: 42px;
+$font-size-h5: 34px;
+$font-size-h6: 26px;
+$font-size-username: 32px;
+$font-size-subtitle-1: 24px;
+$font-size-title-card: 20px;
+$font-size-subtitle-2: 18px;
+$font-size-body: 16px;
+$font-size-button: 16px;
+$font-size-caption: 14px;
+$font-size-profile-name: 12px;
+$font-size-mobile-nav: 22px;
+$font-size-mobile-greeting: 28px;
+$font-size-tablet-greeting: 42px;
+$font-size-desktop-greeting: 56px;
+
+// Window
+$window-border-radius: 8px;
+$window-padding: 0 12px;
+$window-header-padding: 28px 12px 16px;
+
+// Base
+$base-border-radius: 4px;
+$base-primary-margin: 16px;
+$base-secondary-margin: 28px;
+$base-small-margin: $base-primary-margin / 2;
+$scroll-width: 4px;
+
+// Animation
+$bezier: cubic-bezier(0.77, 0, 0.175, 1);
+$anim-timing: 0.5s;

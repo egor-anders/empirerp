@@ -1,0 +1,145 @@
+.greeting {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+
+  &__wrapper {
+    min-width: 384px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 0 175px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: $font-size-mobile-greeting;
+    line-height: 34px;
+    color: $color-white-light;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-tablet-greeting;
+      line-height: 48px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $font-size-desktop-greeting;
+      line-height: 68px;
+    }
+  }
+
+  &__paragraph {
+    position: relative;
+    padding-right: 12px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 162px;
+      top: 15px;
+      width: 12px;
+      height: 12px;
+      background: url("../img/main/stars-emoji.png") no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet) {
+        left: 381px;
+        top: -4px;
+        width: 19px;
+        height: 19px;
+      }
+
+      @media (min-width: $desktop) {
+        left: 530px;
+        top: -5px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      padding-right: 19px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 24px;
+    }
+  }
+}
+
+.button--greeting {
+  position: relative;
+  border: none;
+  padding: 16px 28px 16px 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 16px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/main/arrow.svg") no-repeat;
+    transition: opacity 0.3s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 28px;
+    width: 10px;
+    height: 2px;
+    background: url("../img/main/stick.svg");
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 0.45;
+      transition: opacity 0.3s;
+    }
+
+    @media (min-width: $desktop) {
+      &::before {
+        animation: scrolly $anim-timing $bezier forwards;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin: 8px 0 0;
+  }
+}
+
+@keyframes scrolly {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  10% {
+    transform: translateY(3px) scale(1);
+  }
+
+  30% {
+    transform: translateY(10px) scale(0);
+  }
+
+  60% {
+    transform: translateY(-15px) scale(0);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,71 @@
+.info {
+  &__paragraph {
+    margin: 16px 0;
+    font-size: $font-size-profile-name;
+    line-height: 15px;
+    text-align: center;
+    color: rgba($color: $color-white-light, $alpha: 0.7);
+
+    &--motivation,
+    &--steps {
+      color: rgba($color: $color-dark-3, $alpha: 0.7);
+    }
+
+    @media (min-width: $tablet) {
+      margin: 20px 0;
+      font-size: $font-size-caption;
+      line-height: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 24px 0;
+      width: 100%;
+      font-size: $font-size-subtitle-2;
+      line-height: 22px;
+      text-align: center;
+
+      &--steps {
+        margin: 24px 0 84px;
+      }
+    }
+  }
+
+  &__title {
+    padding: 32px 0 0;
+    margin: 0;
+    font-weight: 900;
+    font-size: $font-size-title-card;
+    line-height: 24px;
+    text-align: center;
+
+    &--online {
+      color: $color-white-light;
+      padding: 64px 0 0;
+    }
+
+    &--motivation {
+      color: $color-dark-3;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-mobile-greeting;
+      line-height: 38px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 100%;
+      font-size: $font-size-tablet-greeting;
+      line-height: 51px;
+      text-align: center;
+
+      &--motivation,
+      &--steps {
+        padding: 189px 0 0;
+      }
+
+      &--online {
+        padding: 128px 0 0;
+      }
+    }
+  }
+}

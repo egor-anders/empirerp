@@ -1,0 +1,132 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: 0 0 16px;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+      margin: 17px 0 32px;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin: 0 0 8px;
+    border-radius: 8px;
+    width: 342px;
+
+    &-value {
+      color: $color-white-light;
+    }
+
+    &-name {
+      color: rgba($color: $color-white-light, $alpha: 0.7);
+    }
+
+    &--lvl &-value {
+      margin: 28px 0 8px 28px;
+
+      @media (min-width: $desktop) {
+        margin: 105px 0 8px 28px;
+      }
+    }
+
+    &--lvl &-name {
+      margin: 0 0 28px 28px;
+    }
+
+    &--time &-value {
+      margin: 56px 0 8px 28px;
+
+      @media (min-width: $tablet) {
+        margin: 80px 0 8px 28px;
+      }
+
+      @media (min-width: $desktop) {
+        margin: 105px 0 8px 28px;
+      }
+    }
+
+    &--time &-name {
+      margin: 0 0 55px 28px;
+
+      @media (min-width: $desktop) {
+        margin: 0 0 28px 28px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      margin: 0 0 12px;
+      width: 468px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0 0 16px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 952px;
+  }
+}
+
+.experience__item--lvl {
+  position: relative;
+  background-color: $color-brand;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 41px;
+    bottom: 19px;
+    width: 99px;
+    height: 66px;
+    background: url("../img/profile/stars-mobile.svg") no-repeat;
+  }
+
+  @media (min-width: $desktop) {
+    width: 226px;
+
+    &::after {
+      right: 14px;
+      bottom: 125px;
+      width: 184px;
+      height: 70px;
+      background: url("../img/profile/stars-desktop.svg") no-repeat;
+    }
+  }
+}
+
+.experience__item--time {
+  position: relative;
+  background-color: $color-dark-2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    width: 250px;
+    height: 137px;
+    background: url("../img/profile/clock.svg") no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    width: 710px;
+
+    &::after {
+      right: 31px;
+      width: 380px;
+      height: 175px;
+      background: url("../img/profile/clock-desk.svg") no-repeat;
+    }
+  }
+}

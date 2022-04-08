@@ -1,0 +1,147 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__table {
+    margin: 0 0 47px;
+
+    @media (min-width: $desktop) {
+      margin: 0 0 128px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+      margin: 16px 0;
+    }
+  }
+
+  &__block {
+    display: block;
+    width: 342px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(28, 28, 30, 0.1);
+    }
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: $font-size-caption;
+      line-height: 17px;
+    }
+
+    @media (min-width: $tablet) {
+      width: 468px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 952px;
+    }
+  }
+
+  &__option {
+    margin: 0 0 16px;
+    color: rgba($color: $color-dark-2, $alpha: 0.45);
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-body;
+      line-height: 19px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $font-size-title-card;
+      line-height: 24px;
+    }
+  }
+
+  &__value {
+    text-align: right;
+    color: $color-dark-2;
+
+    &--confirm {
+      position: relative;
+      margin-bottom: 16px;
+      color: $color-brand;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 6px;
+        width: 20px;
+        height: 20px;
+        background: url("../img/profile/confirm.svg") no-repeat;
+      }
+
+      &--not {
+        color: $color-red;
+
+        &::before {
+          top: 5px;
+          background: url("../img/profile/confirm-not.svg") no-repeat;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        padding-right: 14px;
+
+        &::before {
+          background: none;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -9px;
+          top: 10px;
+          width: 20px;
+          height: 20px;
+          background: url("../img/profile/confirm.svg") no-repeat;
+        }
+
+        &--not {
+          &::before {
+            background: none;
+          }
+
+          &::after {
+            background: url("../img/profile/confirm-not.svg") no-repeat;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-body;
+      line-height: 19px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: $font-size-title-card;
+      line-height: 24px;
+    }
+  }
+}
+
+.safety {
+  display: flex;
+  align-items: center;
+}
+
+.button--settings {
+  margin-bottom: 16px;
+  padding: 4px 8px;
+  font-size: $font-size-caption;
+  line-height: 17px;
+  color: $color-white-light;
+  background-color: $color-brand;
+}

@@ -1,0 +1,423 @@
+.steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  &__paragraph {
+    position: relative;
+    padding-right: 13px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 184px;
+      top: 14px;
+      width: 13px;
+      height: 13px;
+      background: url("../img/main/ok.png") no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet) {
+        left: 428px;
+        top: -1px;
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (min-width: $desktop) {
+        left: 746px;
+        top: 0;
+        width: 19px;
+        height: 19px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      padding-right: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 19px;
+    }
+  }
+
+  &__content {
+    @media (min-width: $desktop) {
+      border-radius: 8px;
+      padding: 28px 0 0;
+      background: $color-dark-4;
+    }
+  }
+
+  &__bg {
+    position: relative;
+    min-width: 384px;
+
+    @media (min-width: $desktop) {
+      background: url("../img/main/steps-bg-desktop.svg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  &__item {
+    z-index: 0;
+    margin: 32px 0 0;
+    border-radius: 8px;
+    width: 342px;
+    background-color: $color-dark-4;
+
+    &:last-child {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $tablet) {
+      width: 468px;
+    }
+
+    @media (min-width: $desktop) {
+      position: relative;
+      margin: 0 484px 128px 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 128px;
+      }
+
+      &:nth-child(2n) {
+        margin: 0 0 128px 484px;
+      }
+
+      &--buy {
+        &::after {
+          right: -300px;
+          bottom: 28px;
+          z-index: -1;
+          width: 363px;
+          height: 311px;
+          background: url("../img/main/gta-item.svg");
+        }
+      }
+
+      &--download {
+        &::after {
+          right: 402px;
+          bottom: 70px;
+          z-index: -1;
+          width: 249px;
+          height: 235px;
+          background: url("../img/main/rage-item.svg");
+        }
+      }
+
+      &--play {
+        &::after {
+          right: -306px;
+          bottom: 131px;
+          z-index: -1;
+          width: 343px;
+          height: 69px;
+          background: url("../img/main/empire-item.svg");
+        }
+      }
+    }
+  }
+
+  &__decoration {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 142px;
+    background: $color-dark-9;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 342px;
+      height: 142px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 342px;
+      height: 142px;
+    }
+
+    &--buy {
+      &::before {
+        left: 45px;
+        width: 250px;
+        background: url("../img/main/gta-bg.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          left: 116px;
+        }
+      }
+
+      &::after {
+        right: 116px;
+        bottom: 22px;
+        width: 115px;
+        height: 98px;
+        background: url("../img/main/gta-logo.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          right: 169px;
+        }
+
+        @media (min-width: $desktop) {
+          right: 125px;
+          bottom: -29px;
+          width: 212px;
+          height: 181px;
+          background-size: cover;
+        }
+      }
+    }
+
+    &--download {
+      &::before {
+        left: 28px;
+        width: 284px;
+        background: url("../img/main/rage-bg.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          left: 105px;
+        }
+      }
+
+      &::after {
+        right: 126px;
+        bottom: 26px;
+        width: 94px;
+        height: 89px;
+        background: url("../img/main/rage-logo.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          right: 182px;
+        }
+
+        @media (min-width: $desktop) {
+          right: 165px;
+          bottom: 0;
+          width: 142px;
+          height: 135px;
+          background-size: cover;
+        }
+      }
+    }
+
+    &--play {
+      &::before {
+        top: 24px;
+        background: url("../img/main/empire-bg.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          top: 4px;
+          width: 468px;
+          background-size: contain;
+        }
+      }
+
+      &::after {
+        right: 78px;
+        bottom: 54px;
+        width: 188px;
+        height: 38px;
+        background: url("../img/main/empire-logo.svg") no-repeat;
+
+        @media (min-width: $tablet) {
+          left: 141px;
+        }
+
+        @media (min-width: $desktop) {
+          left: 136px;
+          bottom: 80px;
+          width: 188px;
+          height: 39px;
+          background-size: cover;
+        }
+      }
+    }
+
+    @media (min-width: $desktop) {
+      height: 194px;
+      background-color: $color-brand;
+
+      &::before {
+        left: 79px;
+        top: 20px;
+        border-radius: 50%;
+        width: 310px;
+        height: 310px;
+        background: rgba($color: $color-white-light, $alpha: 0.1);
+      }
+    }
+  }
+
+  &__name {
+    margin: 16px 0 8px 16px;
+    font-size: $font-size-profile-name;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba($color: $color-white-light, $alpha: 0.45);
+
+    @media (min-width: $tablet) {
+      margin: 28px 0 8px 28px;
+      font-size: $font-size-caption;
+      line-height: 17px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0 0 8px 28px;
+      color: $color-brand;
+    }
+  }
+
+  &__description {
+    margin: 0 0 8px 16px;
+    font-weight: 900;
+    font-size: $font-size-body;
+    line-height: 19px;
+    color: $color-white-light;
+
+    @media (min-width: $tablet) {
+      margin: 0 0 16px 28px;
+      font-size: $font-size-subtitle-1;
+      line-height: 29px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px 0 12px 16px;
+    font-size: $font-size-caption;
+    line-height: 17px;
+    text-decoration: none;
+    color: $color-white-light;
+    background-color: $color-brand;
+    transition: color 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 108px;
+      bottom: 15px;
+      width: 12px;
+      height: 12px;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      color: rgba($color: $color-white-light, $alpha: 0.45);
+      transition: color 0.3s;
+
+      &::before {
+        opacity: 0.45;
+        transition: opacity 0.3s;
+      }
+    }
+
+    &--buy {
+      &::before {
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.98964 0C2.83219 0 0.245625 2.43036 0 5.51872L3.22144 6.84835C3.50273 6.65573 3.8368 6.55274 4.17891 6.55315C4.21088 6.55315 4.24247 6.55403 4.27359 6.55575L5.70638 4.48253V4.4535C5.70638 3.206 6.72309 2.19081 7.97292 2.19081C9.2227 2.19081 10.2394 3.206 10.2394 4.4535C10.2394 5.70096 9.2227 6.71656 7.97292 6.71656C7.95558 6.71656 7.9387 6.71614 7.92145 6.71573L5.87803 8.17069C5.87934 8.19768 5.88019 8.22462 5.88019 8.25114C5.88019 9.18801 5.11692 9.94997 4.17891 9.94997C3.3555 9.94997 2.66658 9.36301 2.51091 8.58612L0.206719 7.63507C0.920297 10.1536 3.23827 12 5.98964 12C9.30923 12 12 9.31339 12 6C12 2.68624 9.30923 0 5.98964 0ZM3.7665 9.10398L3.02827 8.79943C3.15891 9.07148 3.3855 9.29906 3.68606 9.42403C4.33561 9.69437 5.08463 9.3868 5.35538 8.7378C5.48645 8.42574 5.48723 8.07502 5.35753 7.7624C5.22778 7.44754 4.98258 7.20197 4.66819 7.07106C4.35553 6.94146 4.0208 6.94614 3.7267 7.05697L4.48959 7.37182C4.96875 7.57121 5.19534 8.12047 4.99556 8.59878C4.7962 9.07704 4.24566 9.30338 3.7665 9.10398ZM9.48324 4.4535C9.48324 3.62231 8.80556 2.94554 7.97306 2.94554C7.14014 2.94554 6.46247 3.62231 6.46247 4.4535C6.46247 5.28474 7.14014 5.96109 7.97306 5.96109C8.80556 5.96109 9.48324 5.28474 9.48324 4.4535ZM6.84089 4.45095C6.84089 3.82551 7.34902 3.31859 7.97527 3.31859C8.60189 3.31859 9.11002 3.82551 9.11002 4.45095C9.11002 5.07639 8.60189 5.58336 7.97522 5.58336C7.34902 5.58336 6.84084 5.07639 6.84084 4.451L6.84089 4.45095Z' fill='white'/%3E%3C/svg%3E");
+
+        @media (min-width: $tablet) {
+          left: 170px;
+        }
+      }
+    }
+
+    &--download {
+      &::before {
+        left: 88px;
+        width: 8px;
+        height: 11px;
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 1V7M4 7L2 5M4 7L6 5M7 10H1' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+        @media (min-width: $tablet) {
+          left: 151px;
+        }
+      }
+    }
+
+    &--play {
+      &::before {
+        left: 115px;
+        width: 9px;
+        height: 11px;
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='11' viewBox='0 0 9 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 5.5L1 1V10L8 5.5Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+        @media (min-width: $tablet) {
+          left: 176px;
+        }
+      }
+    }
+
+    @media (min-width: $desktop) {
+      display: inline-block;
+      justify-content: left;
+      margin: 0 0 28px 28px;
+      border-radius: 120px;
+      padding: 8px 16px 8px 36px;
+
+      &--buy {
+        padding: 8px 16px 8px 36px;
+
+        &::before {
+          left: 17px;
+          bottom: 11px;
+        }
+      }
+
+      &--download {
+        padding: 8px 16px 8px 30px;
+
+        &::before {
+          left: 16px;
+          bottom: 12px;
+        }
+      }
+
+      &--play {
+        padding: 8px 16px 8px 31px;
+
+        &::before {
+          left: 16px;
+          bottom: 11px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    background: url("../img/main/steps-bg.svg") no-repeat center center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 952px;
+  }
+}

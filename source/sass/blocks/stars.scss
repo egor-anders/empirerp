@@ -1,0 +1,703 @@
+.stars {
+  position: absolute;
+  background-repeat: no-repeat;
+
+  &__greeting {
+    &-star {
+      left: -29px;
+      top: 130px;
+      width: 14px;
+      height: 14px;
+      background: url("../img/stars/star.svg");
+      animation: animDownLong 3.75s infinite linear alternate;
+
+      &--desktop {
+        display: none;
+
+        @media (min-width: 1616px) {
+          left: 1490px;
+          top: 120px;
+          display: block;
+          width: 22px;
+          height: 22px;
+          background: url("../img/stars/star.svg");
+          background-size: cover;
+          animation: animUpShort 4.5s infinite linear alternate;
+        }
+      }
+
+      &--opacity {
+        left: 5px;
+        top: -80px;
+        width: 22px;
+        height: 22px;
+        background: url("../img/stars/star.svg");
+        background-size: cover;
+        opacity: 0.45;
+        animation: animUpLong 5s infinite linear alternate;
+
+        &--tablet {
+          display: none;
+
+          @media (min-width: $tablet) {
+            left: 469px;
+            top: -130px;
+            display: block;
+            width: 38px;
+            height: 38px;
+            background: url("../img/stars/star.svg");
+            background-size: cover;
+            opacity: 0.45;
+            animation: animUpShort 3s infinite linear alternate;
+          }
+
+          @media (min-width: $desktop) {
+            left: 399px;
+            top: 631px;
+            display: block;
+            width: 38px;
+            height: 38px;
+            background-size: cover;
+            opacity: 0.45;
+            animation: animUpShort 5s infinite linear alternate;
+          }
+        }
+
+        @media (min-width: $tablet) {
+          left: -110px;
+          top: -80px;
+        }
+
+        @media (min-width: $desktop) {
+          display: none;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        left: -60px;
+        top: 280px;
+      }
+
+      @media (min-width: $desktop) {
+        left: -167px;
+        top: -87px;
+        width: 22px;
+        height: 22px;
+        background-size: cover;
+      }
+    }
+
+    &-rhomb {
+      left: 213px;
+      top: 320px;
+      width: 10px;
+      height: 12px;
+      background: url("../img/stars/rhomb.svg");
+      animation: animDownLong 6s infinite linear alternate;
+
+      &--desktop {
+        display: none;
+
+        @media (min-width: 1735px) {
+          left: 1715px;
+          top: 560px;
+          display: block;
+          width: 20px;
+          height: 24px;
+          background: url("../img/stars/rhomb.svg");
+          background-size: cover;
+          animation: animUpShort 3.5s infinite linear alternate;
+        }
+      }
+
+      &--opacity {
+        left: 290px;
+        top: 30px;
+        width: 15px;
+        height: 18px;
+        background: url("../img/stars/rhomb.svg");
+        background-size: cover;
+        opacity: 0.7;
+        animation: animUpLong 5.5s infinite linear alternate;
+
+        &--desktop {
+          display: none;
+
+          @media (min-width: 1705px) {
+            left: 140px;
+            top: 810px;
+            display: block;
+            width: 14px;
+            height: 16px;
+            background: url("../img/stars/rhomb.svg");
+            background-size: cover;
+            opacity: 0.45;
+            animation: animUpLong 6.5s infinite linear alternate;
+          }
+        }
+
+        @media (min-width: $tablet) {
+          left: 208px;
+          top: -130px;
+          width: 23px;
+          height: 27px;
+          background-size: cover;
+          animation: animDownShort 5s infinite linear alternate;
+        }
+
+        @media (min-width: $desktop) {
+          left: 26px;
+          top: 350px;
+          width: 31px;
+          height: 38px;
+          opacity: 0.25;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        left: 440px;
+        top: 450px;
+      }
+
+      @media (min-width: $desktop) {
+        left: 580px;
+        top: -150px;
+        width: 45px;
+        height: 54px;
+        background-size: cover;
+        opacity: 0.1;
+        animation: animDownShort 5.25s infinite linear alternate;
+      }
+    }
+  }
+
+  &__online {
+    @media (min-width: $tablet) {
+      &-star {
+        &--red {
+          left: 680px;
+          top: 190px;
+          width: 24px;
+          height: 24px;
+          background: url("../img/stars/star-red.svg");
+          animation: animDownShort 4s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 830px;
+            top: 240px;
+          }
+        }
+
+        &--blue {
+          left: 50px;
+          top: 410px;
+          width: 16px;
+          height: 16px;
+          background: url("../img/stars/star-blue.svg");
+          animation: animUpLong 3s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 85px;
+            top: 410px;
+          }
+        }
+
+        &--white {
+          left: 460px;
+          top: 460px;
+          z-index: 3;
+          width: 24px;
+          height: 24px;
+          background: url("../img/stars/star.svg");
+          background-size: cover;
+          animation: animUpLong 5s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 565px;
+            top: 600px;
+          }
+        }
+      }
+
+      &-rhomb {
+        &--red {
+          left: 150px;
+          top: 290px;
+          z-index: 3;
+          width: 16px;
+          height: 22px;
+          background: url("../img/stars/rhomb-red.svg");
+          animation: animDownLong 4s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 195px;
+            top: 510px;
+          }
+        }
+
+        &--blue {
+          left: 880px;
+          top: 570px;
+          display: none;
+          width: 10px;
+          height: 14px;
+          background: url("../img/stars/rhomb-blue.svg");
+          animation: animUpLong 5s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 880px;
+            top: 570px;
+            display: block;
+          }
+        }
+
+        &--white {
+          left: 470px;
+          top: 280px;
+          display: none;
+          width: 18px;
+          height: 22px;
+          background: url("../img/stars/rhomb.svg");
+          background-size: cover;
+          animation: animUpShort 4.5s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            left: 470px;
+            top: 280px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__steps {
+    @media (min-width: $tablet) {
+      &-star {
+        &--red {
+          background: url("../img/stars/star-red.svg");
+          background-size: cover;
+
+          &--small {
+            left: 180px;
+            top: 930px;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            animation: animUpShort 4s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 745px;
+              top: 870px;
+            }
+          }
+
+          &--big {
+            left: 670px;
+            top: 200px;
+            width: 38px;
+            height: 38px;
+            animation: animDownShort 5.5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 540px;
+              top: 1530px;
+            }
+          }
+        }
+
+        &--blue {
+          background: url("../img/stars/star-blue.svg");
+          background-size: cover;
+
+          &--small {
+            left: 50px;
+            top: 490px;
+            width: 24px;
+            height: 24px;
+            animation: animUpShort 4.5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 185px;
+              top: 340px;
+            }
+          }
+
+          &--big {
+            left: 620px;
+            top: 780px;
+            width: 38px;
+            height: 38px;
+            animation: animUpLong 5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 360px;
+              top: 1260px;
+            }
+          }
+        }
+
+        &--white {
+          background: url("../img/stars/star.svg");
+          background-size: cover;
+
+          &--small {
+            left: 200px;
+            top: 200px;
+            z-index: 1;
+            width: 14px;
+            height: 14px;
+            animation: animUpShort 4s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 510px;
+              top: 940px;
+            }
+          }
+
+          &--medium {
+            left: 500px;
+            top: 560px;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            animation: animDownShort 5.5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 390px;
+              top: 370px;
+            }
+          }
+
+          &--big {
+            left: 355px;
+            top: 1460px;
+            z-index: 1;
+            display: none;
+            width: 16px;
+            height: 16px;
+            animation: animUpShort 3.5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &-rhomb {
+        &--red {
+          background: url("../img/stars/rhomb-red.svg");
+          background-size: cover;
+
+          &--under {
+            left: 130px;
+            top: 620px;
+            width: 34px;
+            height: 46px;
+            animation: animDownLong 5.25s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: -170px;
+              top: 440px;
+            }
+          }
+
+          &--free {
+            left: 600px;
+            top: 1110px;
+            z-index: 1;
+            width: 34px;
+            height: 46px;
+            animation: animUpShort 3s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 140px;
+              top: 940px;
+            }
+          }
+
+          &--medium {
+            left: 65px;
+            top: -60px;
+            z-index: 1;
+            display: none;
+            width: 24px;
+            height: 32px;
+            animation: animDownShort 4.75s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              display: block;
+            }
+          }
+        }
+
+        &--blue {
+          background: url("../img/stars/rhomb-blue.svg");
+          background-size: cover;
+
+          &--small {
+            left: 560px;
+            top: 210px;
+            z-index: 1;
+            width: 16px;
+            height: 22px;
+            animation: animUpLong 4.75s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 593px;
+              top: 1750px;
+            }
+          }
+
+          &--big {
+            left: -100px;
+            top: 1560px;
+            display: none;
+            width: 24px;
+            height: 33px;
+            animation: animDownLong 3s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              display: block;
+            }
+          }
+        }
+
+        &--white {
+          left: 875px;
+          top: 910px;
+          z-index: 1;
+          display: none;
+          width: 20px;
+          height: 24px;
+          background: url("../img/stars/rhomb.svg");
+          background-size: cover;
+          animation: animDownLong 5.25s infinite linear alternate;
+
+          @media (min-width: $desktop) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__donate {
+    &-star {
+      left: 300px;
+      top: -130px;
+      width: 22px;
+      height: 22px;
+      background: url("../img/stars/star.svg");
+      background-size: cover;
+      opacity: 0.45;
+      animation: animDownLong 3.75s infinite linear alternate;
+
+      &--opacity {
+        left: -10px;
+        top: 285px;
+        width: 22px;
+        height: 22px;
+        background: url("../img/stars/star.svg");
+        background-size: cover;
+        opacity: 0.45;
+        animation: animUpLong 5s infinite linear alternate;
+
+        @media (min-width: $tablet) {
+          left: -130px;
+          top: 145px;
+        }
+
+        @media (min-width: $desktop) {
+          left: -190px;
+          top: 425px;
+          opacity: 1;
+        }
+      }
+
+      &--desktop {
+        @media (min-width: $desktop) {
+          left: -650px;
+          top: 70px;
+          width: 42px;
+          height: 42px;
+          background: url("../img/stars/star.svg");
+          background-size: cover;
+          opacity: 0.15;
+          animation: animUpLong 6s infinite linear alternate;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        left: 430px;
+      }
+
+      @media (min-width: $desktop) {
+        left: 640px;
+        top: 425px;
+        opacity: 1;
+      }
+    }
+
+    &-rhomb {
+      left: 55px;
+      top: 450px;
+      width: 15px;
+      height: 18px;
+      background: url("../img/stars/rhomb.svg");
+      background-size: cover;
+      animation: animUpShort 3s infinite linear alternate;
+
+      &--opacity {
+        left: 310px;
+        top: 480px;
+        width: 15px;
+        height: 18px;
+        background: url("../img/stars/rhomb.svg");
+        background-size: cover;
+        opacity: 0.7;
+        animation: animDownLong 4s infinite linear alternate;
+
+        @media (min-width: $tablet) {
+          left: 340px;
+        }
+
+        @media (min-width: $desktop) {
+          left: 430px;
+          top: 170px;
+          width: 45px;
+          height: 55px;
+          opacity: 0.1;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        left: -65px;
+      }
+
+      @media (min-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+
+  &__login {
+    &-rhomb {
+      &--white {
+        @media (min-width: $tablet) {
+          width: 14px;
+          height: 17px;
+          background: url("../img/stars/rhomb.svg");
+          background-size: cover;
+
+          &--first {
+            left: -160px;
+            top: -100px;
+            animation: animDownLong 4.5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: -490px;
+              top: 0;
+            }
+          }
+
+          &--second {
+            left: 430px;
+            top: -220px;
+            animation: animDownShort 3.25s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: -70px;
+            }
+
+            @media (min-width: 1442px) {
+              left: 870px;
+            }
+          }
+
+          &--third {
+            left: -100px;
+            top: 470px;
+            animation: animUpShort 4s infinite linear alternate;
+
+            @media (min-width: 1177px) {
+              left: 750px;
+            }
+          }
+        }
+      }
+
+      &--blue {
+        @media (min-width: $tablet) {
+          width: 14px;
+          height: 19px;
+          background: url("../img/stars/rhomb-blue.svg");
+          background-size: cover;
+
+          &--first {
+            left: 140px;
+            top: -130px;
+            animation: animDownLong 5s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: 470px;
+              top: -120px;
+            }
+          }
+
+          &--second {
+            left: 430px;
+            top: 250px;
+            animation: animDownShort 3.25s infinite linear alternate;
+
+            @media (min-width: $desktop) {
+              left: -650px;
+              top: 490px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animUpLong {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes animUpShort {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes animDownLong {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(+60px);
+  }
+}
+
+@keyframes animDownShort {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(+60px);
+  }
+}

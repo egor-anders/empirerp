@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Личный кабинет - Empire RP</title>
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav container container--header">
+      <div class="main-nav__wrapper main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a href="index.html" class="main-nav__logo main-nav__logo--profile"><object type="image/svg+xml" data="./img/main-nav/logo-mobile.svg" width="92" height="20"></object></a>
+        <ul class="main-nav__list site-navigation site-navigation--profile" data-desktop_nav>
+          <li class="site-navigation__item site-navigation__item--profile">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--profile">
+            <a href="forum.html">Форум</a>
+          </li>
+          <li class="site-navigation__item site-navigation__item--profile">
+            <a href="donate.html">Пополнить счёт</a>
+          </li>
+        </ul>
+        <a class="button button--user button--account" data-account>Artemiy</a>
+      </div>
+      <ul class="main-nav__list site-navigation visually-hidden" data-mobile_nav>
+        <!-- active class site-navigation__item--active -->
+        <li class="site-navigation__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="forum.html">Форум</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="donate.html">Пополнить счёт</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="user container">
+      <img src="img/profile/user_icon.png" class="user__photo" width="106" height="106">
+      <p class="user__name" data-username>@artemiy</p>
+      <p class="user__balance">2 462</p>
+      <div class="user__buttons">
+        <button class="user__buttons-item button user__buttons-item--ready">Nick Name 1</button>
+        <button class="user__buttons-item button user__buttons-item--wait">Добавить персонажа</button>
+      </div>
+    </section>
+    <section class="money">
+      <h2 class="money__title title title--profile">Финансовое положение</h2>
+      <div class="section-slider">
+        <div class="slider">
+          <div class="money__item  money__item--bank">
+            <h3 class="money__item-value title--card">39 000 000</h3>
+            <p class="money__item-name title--paragraph">Денег в банке</p>
+          </div>
+          <div class="money__item  money__item--cash">
+            <h3 class="money__item-value title--card">39 000 000</h3>
+            <p class="money__item-name title--paragraph">Наличных денег</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience container">
+      <h2 class="experience__title title--profile">Время в игре</h2>
+      <div class="experience__item experience__item--lvl">
+        <h3 class="experience__item-value title--card">8 уровень</h3>
+        <p class="experience__item-name title--paragraph">Мой уровень</p>
+      </div>
+      <div class="experience__item experience__item--time">
+        <h3 class="experience__item-value title--card">36 ч.</h3>
+        <p class="experience__item-name title--paragraph">Часов сыграно</p>
+      </div>
+    </section>
+    <section class="car" data-car>
+      <h2 class="car__title title title--profile">Мои автомобили</h2>
+      <div class="section-slider">
+        <div class="slider">
+          <div class="car__item car__item--landrover">
+            <h3 class="car__item-title title--card">Land <br> Rover</h3>
+          </div>
+          <div class="car__item car__item--mercedes">
+            <h3 class="car__item-title title--card">Mercedes<br> Benz </h3>
+          </div>
+          <div class="car__item car__item--mercedes">
+            <h3 class="car__item-title title--card">Mercedes<br> Benz </h3>
+          </div>
+          <div class="car__item car__item--mercedes">
+            <h3 class="car__item-title title--card">Mercedes<br> Benz </h3>
+          </div>
+          <div class="car__item car__item--mercedes">
+            <h3 class="car__item-title title--card">Mercedes<br> Benz </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="settings container">
+      <h2 class="settings__title title title-profile"> Информация и настройки</h2>
+      <table class="settings__table">
+        <tbody class="settings__block profile-info">
+          <tr class="settings__block-item">
+            <td class="settings__option">Дата регистрации</td>
+            <td class="settings__value">04 / 10 / 2021</td>
+          </tr>
+          <tr class="settings__block-item">
+            <td class="settings__option">Страна регистрации</td>
+            <td class="settings__value">Российская Федерация</td>
+          </tr>
+          <tr class="settings__block-item">
+            <td class="settings__option">Номер телефона</td>
+            <td class="settings__value">57-63-385</td>
+          </tr>
+        </tbody>
+        <tbody class="settings__block adv-info">
+          <tr class="settings__block-item">
+            <td class="settings__option">Блокировки</td>
+            <td class="settings__value">Нет</td>
+          </tr>
+          <tr class="settings__block-item">
+            <td class="settings__option">Варны</td>
+            <td class="settings__value">5</td>
+          </tr>
+        </tbody>
+        <tbody class="settings__block">
+          <tr class="settings__block-item  safety">
+            <td class="settings__option">Двухэтапная аутентификация</td>
+            <td class="settings__value"><button class="button button--settings">Подключить</button></td>
+            <!-- <td class="settings__value settings__value--confirm">Подключена</td> -->
+          </tr>
+          <tr class="settings__block-item">
+            <td class="settings__option">E-mail</td>
+            <td class="settings__value settings__value--confirm">Подтверждён</td>
+            <!--add settings__value--confirm--not Если не подтверждён -->
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-logo">
+          <a href="index.html" class="footer__logo"><object type="image/svg+xml" data="./img/main-nav/logo.svg" width="92" height="20"></object></a>
+        </div>
+        <div class="footer__main footer__desktop-grid">
+          <ul class="footer__block footer__block--contacts">
+            <li class="footer__item footer__item--title">Контакты</li>
+            <li class="footer__item footer__item--email"><a href="mailto:help@empire.com" target="_blank">help@empire.com</a></li>
+          </ul>
+          <section class="footer__block footer__block--social">
+            <div class="footer__item footer__item--title">Соцальные сети</div>
+            <div class="footer__item footer__item--icons">
+              <a href="https://vk.com/empirerp" target="_blank">
+                <div class="footer__icon footer__icon--vk"></div>
+              </a>
+              <a href="https://discord.com/invite/gVErG3R4wS" target="_blank">
+                <div class="footer__icon footer__icon--discord"></div>
+              </a>
+            </div>
+          </section>
+        </div>
+        <ul class="footer__block footer__block--nav footer__desktop-grid">
+          <li class="footer__item footer__item--title">Навигация</li>
+          <li class="footer__item footer__item--important"><a href="">Главная</a></li>
+          <li class="footer__item footer__item--important"><a href="">Форум</a></li>
+          <li class="footer__item footer__item--important"><a href="">Пополнить счет</a></li>
+        </ul>
+        <ul class="footer__block footer__block--info footer__desktop-grid">
+          <li class="footer__item footer__item--title">Документация</li>
+          <li class="footer__item footer__item--important"><a href="">Пользовательское соглашение</a></li>
+          <li class="footer__item footer__item--important"><a href="">Положение о конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/mobile-nav.js"></script>
+</body>

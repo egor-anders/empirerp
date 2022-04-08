@@ -1,0 +1,46 @@
+.modal--pay {
+  @media (min-width: $desktop) {
+    background: $color-white-light;
+  }
+}
+
+.modal-content--pay {
+  @media (max-width: $desktop) {
+    background: $color-white-light;
+  }
+}
+
+.modal__title--pay {
+  color: $color-white;
+
+  @media (min-width: $desktop) {
+    color: $color-dark-8;
+  }
+}
+
+.modal__input--pay {
+  border: solid  $color-white-dark;
+  color: $color-dark-8;
+  background: $color-white-dark;
+
+  &:focus {
+    border: solid $color-brand;
+    color: rgba($color: $color-dark-8, $alpha: 1);
+    background-color: $color-white-light;
+    transition: color 0.3s ease;
+  }
+
+  @media (max-width: $desktop) {
+    &:first-child {
+      margin-top: 28px;
+    }
+  }
+}
+
+.button--modal__pay {
+  padding: 16px 82px;
+}
+
+.modal__message__info--pay {
+  color: rgba($color: $color-dark-8, $alpha: 0.45);
+}

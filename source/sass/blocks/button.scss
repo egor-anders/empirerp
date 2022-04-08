@@ -1,0 +1,18 @@
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 120px;
+  padding: 8px 16px;
+  font-family: "Proxima Nova", "Open Sans", sans-serif;
+  font-size: $font-size-button;
+  line-height: 17px;
+  color: $color-dark-2;
+  background: $color-white;
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgba($color: $color-dark-2, $alpha: 0.45);
+    transition: color 0.3s;
+  }
+}
